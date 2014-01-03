@@ -5,25 +5,6 @@
     this.game = game;
   }
 
-
-
-  // TTT.Tile = Tile = function(div) {
-  //   this.$tileEl = div.find(".tile");
-  //   this.tileId = parseInt($(div).attr('id'))
-  // }
-  //
-  // Tile.game = (Tile.game || new TTT.Game());
-  //
-  // // Tile.prototype.installClickHandler = function() {
-  // //   $('.tile').off("click");
-  // //   // $('.tile').on("click", function(event){event.preventDefault();
-  // //   //   console.log(this);})
-  // //   $('.tile').on("click", function(event) {console.log($(event.currentTarget))} )
-  // //
-  // //   // this.$tileEl.on("click", this.handleClick.bind(this))
-  // //
-  // // }
-
   TTTUI.parsePos = function(num) {
     var positions = [[0,0], [0,1], [0,2],
                      [1,0], [1,1], [1,2],
@@ -55,8 +36,4 @@
 $(function () {
   var UI = new TTT.TTTUI(new TTT.Game());
   $(".tile").on("click", UI.handleClick.bind(UI));
-  console.log(UI.game)
-  // $(".tile").each(function() {
-  //   new TTT.Tile($(this)).installClickHandler()
-  // })
 })
