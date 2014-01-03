@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <!-- <link rel="stylesheet" type="text/css" href="tictactoe.css"> -->
+
+  <script src="jquery.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+  <script src="tictactoe.js"></script>
+  <script src="tictactoeUI.js"></script>
+</head>
+<style>
+  .tile {
+  background-color: pink;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: black thick solid;
+  box-sizing: border-box;
+  }
+  #wrapper {
+    width: 300px;
+  }
+  [data-mark="x"] {
+    background-color: red;
+  }
+
+  [data-mark="o"] {
+    background-color: blue;
+  }
+
+</style>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div id="wrapper">
+    <div class="tile" id="1" data-mark="1"></div><div class="tile" id="2" data-mark="1" ></div><div class="tile" id="3" data-mark="1"></div>
+    <div class="tile" id="4" data-mark="1"></div><div class="tile" id="5" data-mark="1"></div><div class="tile" id="6" data-mark="1"></div>
+    <div class="tile" id="7" data-mark="1"></div><div class="tile" id="8" data-mark="1"></div><div class="tile" id="9" data-mark="1"></div>
+  </div>
+  <h2 class="status">o's turn.</h2>
+</body>
+
+</html>
