@@ -13,7 +13,6 @@
     return positions[parseInt(num) - 1];
   };
 
-
   TTTUI.prototype.handleClick = function(event) {
     var pos = TTTUI.parsePos(event.target.id);
     $(".status").text(this.game.player + "'s turn.")
@@ -26,10 +25,9 @@
     if (this.game.winner()) {
       console.log("winner!")
       $(".status").text(this.game.player + " wins!")
+      $(".tile").off("click")
     }
   };
-
-
 
 })(this)
 
